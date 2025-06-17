@@ -1,0 +1,162 @@
+[gd_scene load_steps=6 format=3 uid="uid://b0b3rycq2ogcr"]
+
+[ext_resource type="Script" uid="uid://8mjeu8742t8n" path="res://Scripts/Battle/ground.gd" id="1_vjtes"]
+[ext_resource type="PackedScene" uid="uid://cc76b1iobhwh2" path="res://Scenes/Battle/tile.tscn" id="2_e5bwa"]
+[ext_resource type="PackedScene" uid="uid://wb7s0ewglwru" path="res://Scenes/player.tscn" id="3_miwgw"]
+
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_miwgw"]
+scenes/1/scene = ExtResource("2_e5bwa")
+
+[sub_resource type="TileSet" id="TileSet_lgci0"]
+tile_size = Vector2i(32, 14)
+sources/0 = SubResource("TileSetScenesCollectionSource_miwgw")
+
+[node name="BattleZone" type="Node2D"]
+script = ExtResource("1_vjtes")
+
+[node name="Map" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_lgci0")
+format = 2
+layer_0/tile_data = PackedInt32Array(0, 0, 65536, 65536, 0, 65536, 131072, 0, 65536, 196608, 0, 65536, 1, 0, 65536, 65537, 0, 65536, 131073, 0, 65536, 196609, 0, 65536, 2, 0, 65536, 65538, 0, 65536, 131074, 0, 65536, 196610, 0, 65536, 3, 0, 65536, 65539, 0, 65536, 131075, 0, 65536, 196611, 0, 65536, 4, 0, 65536, 65540, 0, 65536, 131076, 0, 65536, 196612, 0, 65536, 5, 0, 65536, 65541, 0, 65536, 131077, 0, 65536, 196613, 0, 65536, 6, 0, 65536, 65542, 0, 65536, 131078, 0, 65536, 196614, 0, 65536, 7, 0, 65536, 65543, 0, 65536, 131079, 0, 65536, 196615, 0, 65536)
+
+[node name="Node" type="Node" parent="."]
+
+[node name="Tile1" parent="Node" instance=ExtResource("2_e5bwa")]
+visible = false
+position = Vector2(8, 8)
+
+[node name="Tile2" parent="Node" instance=ExtResource("2_e5bwa")]
+visible = false
+position = Vector2(39, 8)
+
+[node name="Tile3" parent="Node" instance=ExtResource("2_e5bwa")]
+visible = false
+position = Vector2(8, 21)
+
+[node name="Tile4" parent="Node" instance=ExtResource("2_e5bwa")]
+visible = false
+position = Vector2(39, 21)
+
+[node name="Tile5" parent="Node" instance=ExtResource("2_e5bwa")]
+visible = false
+position = Vector2(70, 8)
+
+[node name="Tile6" parent="Node" instance=ExtResource("2_e5bwa")]
+visible = false
+position = Vector2(101, 8)
+
+[node name="Tile7" parent="Node" instance=ExtResource("2_e5bwa")]
+visible = false
+position = Vector2(70, 21)
+
+[node name="Tile8" parent="Node" instance=ExtResource("2_e5bwa")]
+visible = false
+position = Vector2(101, 21)
+
+[node name="Tile9" parent="Node" instance=ExtResource("2_e5bwa")]
+visible = false
+position = Vector2(8, 34)
+
+[node name="Tile10" parent="Node" instance=ExtResource("2_e5bwa")]
+visible = false
+position = Vector2(39, 34)
+
+[node name="Tile11" parent="Node" instance=ExtResource("2_e5bwa")]
+visible = false
+position = Vector2(8, 47)
+
+[node name="Tile12" parent="Node" instance=ExtResource("2_e5bwa")]
+visible = false
+position = Vector2(39, 47)
+
+[node name="Tile13" parent="Node" instance=ExtResource("2_e5bwa")]
+visible = false
+position = Vector2(70, 34)
+
+[node name="Tile14" parent="Node" instance=ExtResource("2_e5bwa")]
+visible = false
+position = Vector2(101, 34)
+
+[node name="Tile15" parent="Node" instance=ExtResource("2_e5bwa")]
+visible = false
+position = Vector2(70, 47)
+
+[node name="Tile16" parent="Node" instance=ExtResource("2_e5bwa")]
+visible = false
+position = Vector2(101, 47)
+
+[node name="Tile17" parent="Node" instance=ExtResource("2_e5bwa")]
+visible = false
+position = Vector2(132, 8)
+
+[node name="Tile18" parent="Node" instance=ExtResource("2_e5bwa")]
+visible = false
+position = Vector2(163, 8)
+
+[node name="Tile19" parent="Node" instance=ExtResource("2_e5bwa")]
+visible = false
+position = Vector2(132, 21)
+
+[node name="Tile20" parent="Node" instance=ExtResource("2_e5bwa")]
+visible = false
+position = Vector2(163, 21)
+
+[node name="Tile21" parent="Node" instance=ExtResource("2_e5bwa")]
+visible = false
+position = Vector2(194, 8)
+
+[node name="Tile22" parent="Node" instance=ExtResource("2_e5bwa")]
+visible = false
+position = Vector2(225, 8)
+
+[node name="Tile23" parent="Node" instance=ExtResource("2_e5bwa")]
+visible = false
+position = Vector2(194, 21)
+
+[node name="Tile24" parent="Node" instance=ExtResource("2_e5bwa")]
+visible = false
+position = Vector2(225, 21)
+
+[node name="Tile25" parent="Node" instance=ExtResource("2_e5bwa")]
+visible = false
+position = Vector2(132, 34)
+
+[node name="Tile26" parent="Node" instance=ExtResource("2_e5bwa")]
+visible = false
+position = Vector2(163, 34)
+
+[node name="Tile27" parent="Node" instance=ExtResource("2_e5bwa")]
+visible = false
+position = Vector2(132, 47)
+
+[node name="Tile28" parent="Node" instance=ExtResource("2_e5bwa")]
+visible = false
+position = Vector2(163, 47)
+
+[node name="Tile29" parent="Node" instance=ExtResource("2_e5bwa")]
+visible = false
+position = Vector2(194, 34)
+
+[node name="Tile30" parent="Node" instance=ExtResource("2_e5bwa")]
+visible = false
+position = Vector2(225, 34)
+
+[node name="Tile31" parent="Node" instance=ExtResource("2_e5bwa")]
+visible = false
+position = Vector2(194, 47)
+
+[node name="Tile32" parent="Node" instance=ExtResource("2_e5bwa")]
+visible = false
+position = Vector2(225, 47)
+
+[node name="Player" parent="." instance=ExtResource("3_miwgw")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(56, 64)
+zoom = Vector2(4.475, 4.475)
+limit_left = -8
+limit_top = -50
+limit_right = 256
+limit_bottom = 100
+
+[connection signal="set_position" from="Player" to="." method="_on_player_set_position"]
